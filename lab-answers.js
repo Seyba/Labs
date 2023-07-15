@@ -116,3 +116,71 @@ const medianNumber = sortedNums[mid]
 
 // logs the median number
 console.log(`The median number is ${medianNumber}`)
+
+//* =================================== Hungry more =====================================
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+];
+
+// Alien Attire
+
+// save the left shoe into the kristynsShoe variable
+const kristynsShoe = kristynsCloset[0]
+
+// remove left shoe from kristynsCloset
+const updatedKristynsCloset = kristynsCloset.splice(1, 6)
+
+// save the left shoe into Thom's accessories array
+thomsCloset[2].push(kristynsShoe)
+
+// Dress Us Up
+
+const hat = updatedKristynsCloset[4]
+const hoodie = updatedKristynsCloset[2]
+const pant = updatedKristynsCloset[3]
+const boot = updatedKristynsCloset[0]
+
+const shirt = thomsCloset[0][0]
+const pant1 = thomsCloset[1][0]
+const scarf = thomsCloset[2][1]
+
+const shirt1 = thomsCloset[0][2]
+const pant2 = thomsCloset[1][1]
+const glasses = thomsCloset[2][2]
+
+const kristynaOutfit = `Kristyna will be wearing ${hat} with ${hoodie} and ${pant} with ${boot}.`
+const thomOutfit1 = `Thom will be wearing ${shirt} on ${pant1} and ${scarf} as accessory.`
+const thomOutfit2 = `For nicer weather Thom will be wearing ${shirt1} on ${pant2} with ${glasses} glasses on.`
+
+const message = [kristynaOutfit, thomOutfit1, thomOutfit2]
+
+const msgIndex = Math.floor(Math.random() * message.length)
+console.log(message[msgIndex])
