@@ -83,3 +83,20 @@ const whereIsWaldo = [
 whereIsWaldo.splice(1,1) // removes eggbert
 whereIsWaldo[1].splice(2, 1, 'No one') // updates 'neff' to 'No One' based on the current state
 console.log(whereIsWaldo[2][1][1]) //Logs 'Waldo'
+
+//* ========================== Excited Kitten ==================================
+
+for(let i = 0; i < 20; i++) {
+    console.log("Love me, pet me! HSSSSSS!")
+
+    if (i % 2 === 0) {
+        const logText = [
+            "...human...why you taking pictures of me?...", 
+            "...the catnip made me do it...", 
+            "...why does the red dot always get away..."
+        ]
+        const logTextIndex = Math.floor(Math.random() * logText.length) // This generates a random array index
+
+        console.log(`${logText[logTextIndex]}`)
+    }
+}
