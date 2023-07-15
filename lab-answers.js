@@ -100,3 +100,19 @@ for(let i = 0; i < 20; i++) {
         console.log(`${logText[logTextIndex]}`)
     }
 }
+
+//* ==================================== Find the median Number ==========================
+
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+// this devide the array into 2 and rounds it
+const mid = Math.floor(nums.length /2) 
+
+// sort the nums array 
+const sortedNums = nums.sort((a, b) => a - b)
+
+// Pass the rounded value as index to the sorted nums array to get the median
+const medianNumber = sortedNums[mid] 
+
+// logs the median number
+console.log(`The median number is ${medianNumber}`)
