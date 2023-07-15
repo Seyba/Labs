@@ -184,3 +184,44 @@ const message = [kristynaOutfit, thomOutfit1, thomOutfit2]
 
 const msgIndex = Math.floor(Math.random() * message.length)
 console.log(message[msgIndex])
+
+// Dirty Laundry
+
+for (let i = 0; i < updatedKristynsCloset.length; i++) {
+    console.log(`WHIRR: Now washing ${updatedKristynsCloset[i]}`)
+}
+
+// Inventory
+
+//Thom wants to do inventory on his closet. 
+//Using bracket notation, 
+//log the arrays containing all of 
+//Thom's shirts, pants, and accessories.
+
+const thomSShirt1 = thomsCloset[0][0]
+const thomSShirt2 = thomsCloset[0][1]
+const thomSShirt3 = thomsCloset[0][2]
+const thomSShirt4 = thomsCloset[0][3]
+
+const thomsPant1 = thomsCloset[1][0]
+const thomsPant2 = thomsCloset[1][1]
+const thomsPant3 = thomsCloset[1][2]
+
+const acc1 = thomsCloset[2][0]
+const acc2 = thomsCloset[2][1]
+const acc3 = thomsCloset[2][2]
+
+console.log(thomSShirt1)
+console.log(thomSShirt2)
+console.log(thomSShirt3)
+console.log(thomSShirt4)
+
+console.log(thomsPant1)
+console.log(thomsPant2)
+console.log(thomsPant3)
+
+console.log(acc1)
+console.log(acc2)
+console.log(acc3)
+
+console.log(acc1)
